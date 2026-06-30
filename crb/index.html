@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia Mecánica del Automotor CRB - 24hs a Domicilio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .services {
+            padding: 80px 20px;
+            background: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #ff6b3530 0%, #ff6b3510 100%);
+        }
+
+        .service-content {
+            padding: 30px 25px;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #ff6b35;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .info-section {
+            background: white;
+            padding: 60px 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .info-item h3 {
+            color: #ff6b35;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .info-item p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .whatsapp-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .services h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="badge">🚗 Atención 24 horas</div>
+        <h1>Asistencia Mecánica CRB</h1>
+        <p>Diagnóstico en el momento, solución inmediata. A domicilio o donde se encuentre tu vehículo.</p>
+        <a href="https://wa.me/541160500190" class="cta-button">Contactanos por WhatsApp</a>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services">
+        <div class="container">
+            <h2>¿Qué ofrecemos?</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=200&fit=crop" alt="Diagnóstico" class="service-image">
+                    <div class="service-content">
+                        <h3>🔍 Diagnóstico Rápido</h3>
+                        <p>Evaluación completa de tu vehículo en el momento</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=400&h=200&fit=crop" alt="Reparación" class="service-image">
+                    <div class="service-content">
+                        <h3>⚙️ Reparación Inmediata</h3>
+                        <p>Soluciones en el acto cuando es posible</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1493476671666-24af50a5f3f7?w=400&h=200&fit=crop" alt="Domicilio" class="service-image">
+                    <div class="service-content">
+                        <h3>🚗 Atención a Domicilio</h3>
+                        <p>Vamos donde estés. Emergencias resueltas sin moverte</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop" alt="Experiencia" class="service-image">
+                    <div class="service-content">
+                        <h3>🔧 Experiencia Profesional</h3>
+                        <p>Técnicos especializados con años de trayectoria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO -->
+    <section class="info-section">
+        <div class="info-grid">
+            <div class="info-item">
+                <h3>📍 Ubicación</h3>
+                <p>Monserrat, CABA<br><small>Av. Entre Ríos 520</small></p>
+            </div>
+            <div class="info-item">
+                <h3>🕒 Horarios</h3>
+                <p>24 horas<br><small>Todos los días</small></p>
+            </div>
+            <div class="info-item">
+                <h3>💬 Contacto</h3>
+                <p><a href="https://wa.me/541160500190" class="whatsapp-link">1160500190</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p><strong>Asistencia Mecánica del Automotor CRB</strong></p>
+        <p>Profesionalismo y confianza en cada servicio</p>
+        <p style="font-size: 0.9rem; opacity: 0.7; margin-top: 20px;">© 2026 Asistencia Mecánica CRB. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
